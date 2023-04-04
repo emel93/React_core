@@ -36,3 +36,5 @@
 1. Компонента таймер должна быть [мемоизирована](https://ru.reactjs.org/docs/react-api.html#reactmemo)
 2. Обработчики событий (колбеки) должен быть [мемоизирован](https://ru.reactjs.org/docs/hooks-reference.html#usecallback)
 3. Обязательное использование useSate
+4. Используем Styled Components
+5. Подключенный prettier, eslint и публикация на github pages.
