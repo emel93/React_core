@@ -17,5 +17,5 @@
 ## Требования
 1. Подключенный prettier, eslint и публикация на github pages.
 2. Компоненты должны быть оптимизированы
-3. Используем Styled Components
+3. Используем Styled Components (MUI)
 4. Не должно быть ошибок в eslint

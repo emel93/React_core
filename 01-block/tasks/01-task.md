@@ -23,7 +23,7 @@
    npx create-react-app 01-task --template typescript-styled
    ```
 2. Темплейт содержит зависимости на [Styled Components](https://styled-components.com/) и [Prettier](https://prettier.io/). Не забудьте поставить дополнительные плагины в вашей среде разработки, чтобы комфортно с ними работать.
-3. Добавьте зависимости на [MUI](https://mui.com/) самостоятельно
+3. Добавьте зависимости на [MUI](https://mui.com/material-ui/getting-started/installation/) самостоятельно
 
 ## Создание компоненты Timer
 1. Создайте компоненту таймер и добавьте: 
@@ -36,5 +36,7 @@
 1. Компонента таймер должна быть [мемоизирована](https://ru.reactjs.org/docs/react-api.html#reactmemo)
 2. Обработчики событий (колбеки) должен быть [мемоизирован](https://ru.reactjs.org/docs/hooks-reference.html#usecallback)
 3. Обязательное использование useSate
-4. Используем Styled Components
-5. Подключенный prettier, eslint и публикация на github pages.
+4. Форматирование времени тоже должно быть мемоизировано
+5. Используем Styled Components (MUI)
+6. Подключенный prettier, eslint и публикация на github pages.
+7. Без ошибок eslint
