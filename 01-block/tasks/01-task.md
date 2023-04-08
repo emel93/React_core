@@ -20,7 +20,7 @@
    ```
     2. И используем его
    ```
-   npx create-react-app todo-list --template typescript-styled
+   npx create-react-app 01-task --template typescript-styled
    ```
 2. Темплейт содержит зависимости на [Styled Components](https://styled-components.com/) и [Prettier](https://prettier.io/). Не забудьте поставить дополнительные плагины в вашей среде разработки, чтобы комфортно с ними работать.
 3. Добавьте зависимости на [MUI](https://mui.com/) самостоятельно
