@@ -38,8 +38,8 @@
 Сделаем страничку для инвентаризации продуктов
 
 ### Что предстоит освоить
-- CRUD
-- Redux
+- [API, CRUD](https://doka.guide/tools/api/)
+- [Redux](https://redux.js.org/)
 - [React Router](https://reactrouter.com/en/main)
 
 ### Что предстоит сделать 
