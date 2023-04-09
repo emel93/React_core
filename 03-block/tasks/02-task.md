@@ -1,17 +1,20 @@
 # Задание 2. Список продуктов. 
 ## Создание компоненты
 1. Создадим новую компоненту для списка продуктов в `src/components/product/list/product-list.component.tsx`.
-2. В качестве входных параметров компонента будет принимать список продуктов: `products: ProductDto[]`
+2. В качестве входных параметров компонента будет принимать список продуктов: `products: ProductModel[]`
 ## Axios и загрузка списка продуктов
-1. `npm i axios` 
-2. Создаём файл `src/constants/api.constants.ts` и добавляем новую константу `PRODUCTS_URl` в ней будет лежать **URL** до списка продуктов `https://fakestoreapi.com/products`
+1. Установим [Axios](https://axios-http.com/ru/docs/intro)
+```
+npm i axios --save
+``` 
+2. Создаём файл `src/constants/api.constants.ts` и добавляем новую константу `PRODUCTS_URL` в ней будет лежать **URL** до списка продуктов `https://fakestoreapi.com/products`
 3. Создаём новый сервис для того, чтобы загрузить наши продукты `src/services/product-api.service.ts`.
-4. В сервисе добавляем метод `fetchProductsApi`, возвращаемое значение будет: `Promise<AxiosResponse<Product[]>>`
+4. В сервисе добавляем метод `fetchProductsApi`, возвращаемое значение будет: `Promise<AxiosResponse<ProductModel[]>>`
 5. С помощью `axios`, загружаем список продуктов.
 6. Создаём контейнер для списка продуктов. `src/components/product/list/product-list.container.tsx`. (не забываем про шаблон из первого задания)
 7. Внутри контейнера потребуется локальный стейт для того, чтобы хранить список, для этого используем `useState`
 ```typescript
- const [products, setProducts] = useState<Product[]>([]);
+ const [products, setProducts] = useState<ProductModel[]>([]);
 ```
 8. Внутри контейнера создадим асинхронный метод, чтобы загрузить продукты и сохранить их в локальном стейте `async function fetchProducts()`
 9. Добавим еще один хук `useEffect`, чтобы загрузить список 1 раз при рендере компоненты.

@@ -25,7 +25,7 @@
    npx create-react-app 01-block --template typescript-styled
    ```
 2. Темплейт содержит зависимости на [Styled Components](https://styled-components.com/) и [Prettier](https://prettier.io/). Не забудьте поставить дополнительные плагины в вашей среде разработки, чтобы комфортно с ними работать.
-3. Добавьте зависимости на [MUI](https://mui.com/material-ui/getting-started/installation/) самостоятельно
+3. Добавьте зависимости на [MUI](https://mui.com/material-ui/getting-started/installation/) самостоятельно (должны быть сохранены в `package.json`. Используйте `--save` при установке через `npm`)
 
 ## Требования
 - Старт с create-react-app, styled-components, prettier, MUI

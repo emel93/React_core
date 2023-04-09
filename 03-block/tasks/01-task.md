@@ -1,7 +1,7 @@
 # Задание 1. Компонента с карточкой продукта 
 ## Генерация данных
 1. Сгенерировать тестовые данные продукта используя `https://fakestoreapi.com/`, а именно `https://fakestoreapi.com/products`
-2. Исходя из полученных данных сформировать модель `Product` и положить ее в `product.model.ts`
+2. Исходя из полученных данных сформировать модель `ProductModel` и положить ее в `product.model.ts`
 3. В разделе `src/data` создать файл `product.data.ts`. Сохраним все продукты в `productListData`
 ## Создание компоненты
 1. В разделе `src/components` создаем раздел `product/card` и в нём файл `product-card.component.tsx`
@@ -27,10 +27,10 @@ const $Name$: FC<$Name$Props> = () => {
 export default memo($Name$);
 ```
 ## Использование компоненты
-1. Используем созданную компоненту в `app.ts`. В случае успеха на экране появится надпись `PrdouctCard`
-2. В качестве входных пропертей будем использовать `Product`:
+1. Используем созданную компоненту в `app.ts`. В случае успеха на экране появится надпись `ProductCard`
+2. В качестве входных пропертей будем использовать `ProductModel`:
 ```typescript
-type ProductProps = Product;
+type ProductProps = ProductModel;
 ```
 3. В `ProductCard` компоненте будем показывать `title`, `image`, `price` и `description`, используем деструктуризацию для передачи **props** внутрь компоненты.
 4. Возьмём данные из `productListData` и передадим их в компоненту:
